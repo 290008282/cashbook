@@ -42,7 +42,7 @@ const toPath = (menu: Menu) => {
     window.open(`/`, "_blank");
     return;
   } else if (menu.path == "github") {
-    window.open(`https://github.com/dingdangdog/cashbook`, "_blank");
+    window.open(`https://github.com/290008282/cashbook`, "_blank");
     return;
   } else if (menu.path == "documentation") {
     toDocumentation();
