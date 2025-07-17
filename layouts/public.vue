@@ -105,7 +105,7 @@ const openChangePasswordDialog = () => {
 
 // Version check (keeping original functionality)
 const checkVersion = () => {
-  fetch("https://api.github.com/repos/dingdangdog/cashbook/releases/latest")
+  fetch("https://api.github.com/repos/290008282/cashbook/releases/latest")
     .then((res) => res.json())
     .then((data) => {
       const latestVersion = data.tag_name.replace("v", "");
@@ -124,7 +124,7 @@ const checkVersion = () => {
           closeText: "知道了",
           confirm: () => {
             window.open(
-              `https://github.com/dingdangdog/cashbook/releases`,
+              `https://github.com/290008282/cashbook/releases`,
               "_blank"
             );
           },
@@ -149,7 +149,7 @@ const checkVersion = () => {
     <Meta name="description" :content="SystemConfig?.description" />
     <Meta
       name="keywords"
-      :content="`Cashbook,记账本,私人记账,开源账本,dingdangdog,月上老狗,${SystemConfig?.keywords}`"
+      :content="`Cashbook,记账本,私人记账,开源账本,${SystemConfig?.keywords}`"
     />
   </Head>
 
