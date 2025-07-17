@@ -89,11 +89,11 @@ const items: Menu[] = [
 
 const handleNavigate = (menu: Menu) => {
   if (menu.path === "github") {
-    window.open("https://github.com/dingdangdog/cashbook", "_blank");
+    window.open("https://github.com/290008282/cashbook", "_blank");
     return;
   } else if (menu.path === "documentation") {
     // 打开文档站，可以根据需要修改为实际的文档URL
-    window.open("https://doc.cashbook.oldmoon.top", "_blank");
+    window.open("#", "_blank");
     return;
   }
   emit("navigate", menu.path || "calendar");
