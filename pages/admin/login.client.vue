@@ -205,7 +205,7 @@ const toHome = () => {
 
 // 跳转到 GitHub
 const toGithub = () => {
-  window.open('https://github.com/dingdangdog/cashbook', '_blank');
+  window.open('https://github.com/290008282/cashbook', '_blank');
 };
 
 // 如果已登录则跳转到管理后台
