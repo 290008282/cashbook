@@ -50,7 +50,7 @@ const showUserMenu = ref(false);
           <div class="items-center ml-2 md:ml-0 hidden sm:flex">
             <img src="/logo.png" alt="Cashbook" class="h-8 w-8" />
             <span class="ml-2 text-xl font-bold text-green-500">
-              Cashbook
+              易捷记账
             </span>
           </div>
         </div>
