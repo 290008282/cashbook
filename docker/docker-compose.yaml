@@ -4,7 +4,7 @@ services:
     container_name: cashbook4
     depends_on: 
       - "db"
-    image: dingdangdog/cashbook:4.1.0
+    image: dingdangdog/cashbook:latest
     restart: always
     # network_mode: "host"
     volumes:
@@ -12,15 +12,15 @@ services:
     environment:
       DATABASE_URL: "postgresql://postgres:postgres@cashbook_db:5432/cashbook?schema=public" # 数据库链接，【请自行修改！与你的数据库一致】
       NUXT_DATA_PATH: "/app/data" # 数据存储未知，现在只有小票图片了，不建议修改
-      NUXT_AUTH_SECRET: "auth_secret" # 前台登录加密使用的密钥 【自行修改！】
+      # NUXT_AUTH_SECRET: "auth_secret" # 前台登录加密使用的密钥 【自行修改！】
       NUXT_ADMIN_USERNAME: "admin" # 后台登录用户名
       # 【自行修改】后台登录密码，密码是加密后的，生成密码可前往 https://cashbook.oldmoon.top/admin/GetPassword 或独立部署后访问 `你的url/admin/GetPassword`
-      NUXT_ADMIN_PASSWORD: "fb35e9343a1c095ce1c1d1eb6973dc570953159441c3ee315ecfefb6ed05f4cc"
+      NUXT_ADMIN_PASSWORD: "ce145ee9c9c119daa9ad0e8d420d61813c36dbc4b2e39751d50045b3720b36d8"
     ports:
       - 9090:9090 # 账本开放端口 【自行修改！】
   db:
     container_name: cashbook_db
-    image: postgres:17.4-alpine3.21
+    image: postgres
     restart: always
     #network_mode: "host"
     # set shared memory limit when using docker-compose
