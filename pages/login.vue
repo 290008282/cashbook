@@ -143,11 +143,11 @@ onMounted(async () => {
 });
 
 const toDocumentation = () => {
-  window.open("https://docs.example.com", "_blank");
+  window.open("#", "_blank");
 };
 
 const toGithub = () => {
-  window.open("https://github.com/dingdangdog/cashbook", "_blank");
+  window.open("https://github.com/290008282/cashbook", "_blank");
 };
 
 const toAdmin = () => {
@@ -161,7 +161,7 @@ const toAdmin = () => {
     <Meta name="description" :content="SystemConfig?.description" />
     <Meta
       name="keywords"
-      :content="`Cashbook,记账本,私人记账,开源账本,dingdangdog,月上老狗,${SystemConfig?.keywords}`"
+      :content="`Cashbook,记账本,私人记账,开源账本,${SystemConfig?.keywords}`"
     />
   </Head>
 
